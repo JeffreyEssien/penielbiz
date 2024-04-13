@@ -31,3 +31,63 @@ body {
     text-wrap: balance;
   }
 }
+
+.slide-in {
+  animation: slide-in 1.0s ease-in-out forwards;
+  opacity: 0; /* Initially hide elements */
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(100px); /* Elements slide in from bottom */
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1; /* Elements become visible */
+  }
+}
+
+.slide-out {
+  animation: slide-out 0.5s ease-in-out forwards;
+  /* Initially visible with full opacity */
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0); /* Starts from original position */
+  }
+  to {
+    transform: translateY(20px); /* Slides out to the right (adjust as needed) */
+    opacity: 1; /* Fades out at the end */
+  }
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.5s ease-in-out forwards;
+  opacity: 0; /* Initially hidden */
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%); /* Starts off-screen to the left */
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1; /* Becomes visible at the end */
+  }
+}
+
+.slide-in-right {
+  animation: slide-in-right 0.5s ease-in-out forwards;
+  opacity: 0; /* Initially hidden */
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%); /* Starts off-screen to the right */
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1; /* Becomes visible at the end */
+  }
+}
