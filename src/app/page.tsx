@@ -76,14 +76,13 @@ export default function Home() {
         </div>
         )}
 
-      <div className="flex flex-row justify- w-[90%] mx-auto my-40 bg-img bg-cover bg-no-repeat" style={{backgroundImage: `url(${backgroundImage})`}}>
-        <div className="flex flex-col w-1/2 pt-20">
+      <div className="flex flex-col xl:flex-row justify- w-[90%] mx-auto my-40 bg-img bg-cover bg-no-repeat" style={{backgroundImage: `url(${backgroundImage})`}}>
+        <div className="flex flex-col xl:w-1/2 pt-20">
         <p className="text-black text-3xl text-center font-bold mb-4"> PENIEL SOFTWARE SOLUTIONS</p>
         <p className="text-black text-6xl text-center font-black">We create innovative and valuable business software solutions that give client satisfaction.</p>
         </div>
-        <div className="w-1/2">
-          <Image src={codingImg} alt="image" width={200}  className="absolute z-10"/>
-          <Image src={codingImg2} alt="image"  width={100} layout="responsive"/>
+        <div className="xl:w-1/2 mt-10">
+          <Image src={codingImg2} alt="image"  width={900} layout="responsive"/>
         </div>
       </div>
 
